@@ -168,6 +168,7 @@ export AUR_PACKAGES="\
 	rz608-fix-git \
 	steam-removable-media-git \
 	steamos-compositor-plus \
+	sunshine \
 	wyvern \
 	xone-dkms \
 	xpad-noone-dkms \
