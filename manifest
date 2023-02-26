@@ -126,14 +126,6 @@ export PACKAGES="\
 	xdg-user-dirs-gtk \
 	xf86-video-amdgpu \
 	xorg-server \
-	zlib \
-	chaotic-aur/dwarfs \
-	chaotic-aur/legendary \
-	chaotic-aur/boxtron \
-	chaotic-aur/python-vdf \
-	chaotic-aur/r8152-dkms \
-	chaotic-aur/rtl88x2bu-dkms-git \
-	chaotic-aur/rtw89-dkms-git \
 "
 
 export AUR_PACKAGES="\
@@ -161,6 +153,13 @@ export AUR_PACKAGES="\
 	xone-dkms \
 	xpad-noone-dkms \
 	xpadneo-dkms \
+	dwarfs \
+	legendary \
+	boxtron \
+	python-vdf \
+	r8152-dkms \
+	rtl88x2bu-dkms-git \
+	rtw89-dkms-git \
 "
 
 export SERVICES="\
