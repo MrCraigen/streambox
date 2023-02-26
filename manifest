@@ -1,8 +1,8 @@
 #! /bin/bash
 
 export VERSION="40"
-export SYSTEM_DESC="ChimeraOS"
-export SYSTEM_NAME="chimeraos"
+export SYSTEM_DESC="StreamBox"
+export SYSTEM_NAME="streambox"
 export USERNAME="gamer"
 export SIZE="10000MB"
 export ARCHIVE_DATE=""
