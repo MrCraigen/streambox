@@ -118,15 +118,6 @@ echo '
 Include = /etc/pacman.d/chaotic-mirrorlist
 ' >> /etc/pacman.conf
 
-# rumpowered
-pacman-key --recv-keys cc7a2968b28a04b3
-pacman-key --lsign-key cc7a2968b28a04b3
-
-echo '
-[rumpowered]
-Server = https://repo.rumpowered.org/$arch
-' >> /etc/pacman.conf
-
 # update package databases
 pacman --noconfirm -Syy
 
