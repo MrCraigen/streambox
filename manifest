@@ -1,0 +1,244 @@
+#! /bin/bash
+
+export VERSION="40"
+export SYSTEM_DESC="ChimeraOS"
+export SYSTEM_NAME="chimeraos"
+export USERNAME="gamer"
+export SIZE="10000MB"
+export ARCHIVE_DATE=""
+export WEBSITE="https://chimeraos.org"
+export DOCUMENTATION_URL="https://chimeraos.org/about"
+export BUG_REPORT_URL="https://github.com/ChimeraOS/chimeraos/issues"
+
+export KERNEL_PACKAGE="linux"
+
+export PACKAGES="\
+	accountsservice \
+	alsa-firmware \
+	alsa-ucm-conf \
+	alsa-utils \
+	amd-ucode \
+	bluez \
+	bluez-hid2hci \
+	bluez-plugins \
+	bluez-utils \
+	broadcom-wl-dkms \
+	cifs-utils \
+	diffutils \
+	dkms \
+	dmidecode \
+	dosbox \
+	eog \
+	ethtool \
+	ffmpeg \
+	file-roller \
+	flatpak \
+	fmt \
+	fuse2 \
+	fuse-overlayfs \
+	openssl-1.1 \
+	gamemode \
+    giflib \
+	gst-libav \
+	gst-plugins-bad \
+	gst-plugins-base \
+	gst-plugins-good \
+    gst-plugins-ugly \
+	gst-plugin-pipewire \
+	gstreamer-vaapi \
+	gvfs \
+	haveged \
+	htop \
+	iio-sensor-proxy \
+	intel-media-driver \
+	intel-ucode \
+	intel-undervolt \
+	lib32-alsa-lib \
+	lib32-alsa-plugins \
+	lib32-curl \
+	lib32-fontconfig \
+	lib32-freetype2 \
+	lib32-gamemode \
+	lib32-libgpg-error \
+	lib32-libnm \
+	lib32-libpulse \
+	lib32-libxinerama \
+	lib32-libxcrypt-compat \
+	lib32-libva-vdpau-driver \
+	lib32-openal \
+	lib32-pipewire \
+	lib32-systemd \
+	lib32-vulkan-icd-loader \
+	libcurl-gnutls \
+	libidn11 \
+	libretro-beetle-pce-fast \
+	libretro-beetle-psx-hw \
+	libretro-desmume \
+	libretro-dolphin \
+	libretro-flycast \
+	libretro-genesis-plus-gx \
+	libretro-kronos \
+	libretro-mame \
+	libretro-mgba \
+	libretro-mupen64plus-next \
+	libretro-nestopia \
+	libretro-picodrive \
+	libretro-play \
+	libretro-ppsspp \
+	libretro-snes9x \
+	libva-intel-driver \
+	libva-vdpau-driver \
+	libxcrypt-compat \
+	lightdm \
+	linux-firmware \
+	liquidctl \
+	logrotate \
+	lshw \
+	mesa-demos \
+	nano \
+	networkmanager \
+	nfs-utils \
+	nss-mdns \
+	nvidia-dkms \
+	nvidia-prime \
+	nvidia-utils \
+	openal \
+	openssh \
+	pipewire \
+	pipewire-alsa \
+	pipewire-jack \
+	pipewire-pulse \
+	podman \
+	pulsemixer \
+	python \
+	python-gobject \
+	python-inotify-simple \
+	retroarch \
+	rsync \
+	smbclient \
+	sof-firmware \
+	sudo \
+	ttf-liberation \
+	unzip \
+	usb_modeswitch \
+	usbutils \
+	vim \
+	vulkan-icd-loader \
+	wavpack \
+	which \
+	wine-staging \
+	wine-mono \
+	wireplumber \
+	wqy-zenhei \
+	xdg-desktop-portal \
+	xdg-desktop-portal-gnome \
+	xdg-desktop-portal-wlr \
+	xdg-user-dirs-gtk \
+	xf86-video-amdgpu \
+	xorg-server \
+	zlib \
+	rumpowered/dwarfs \
+	rumpowered/bindtointerface \
+	rumpowered/lib32-bindtointerface \
+	chaotic-aur/legendary \
+	chaotic-aur/boxtron \
+	chaotic-aur/python-vdf \
+	chaotic-aur/r8152-dkms \
+	chaotic-aur/rtl88x2bu-dkms-git \
+	chaotic-aur/rtw89-dkms-git \
+"
+
+export AUR_PACKAGES="\
+	alienware-alpha-wmi \
+	bcm20702a1-firmware \
+	chimeraos-device-quirks-git \
+	frzr \
+	gamescope-plus \
+	gamescope-session-git \
+	handygccs-git \
+	hhfc-git \
+	nintendo-udev \
+    ogui-bin \
+	opengamepadui-session-git \
+	oxp-platform-dkms-git \
+	rtl8812au-dkms-git \
+	rtl8814au-dkms-git \
+	ryzenadj-git \
+	ryzenadj-controller-git \
+	rz608-fix-git \
+	steam-removable-media-git \
+	steamos-compositor-plus \
+	wyvern \
+	xone-dkms \
+	xpad-noone-dkms \
+	xpadneo-dkms \
+"
+
+export SERVICES="\
+	NetworkManager \
+	avahi-daemon \
+	bluetooth \
+	bluetooth-workaround \
+	chimera-proxy.service \
+	chimera-proxy.socket \
+	fstrim.timer \
+	handycon \
+	haveged \
+	lightdm \
+	ryzenadj-controller \
+	sshd \
+	systemd-timesyncd \
+"
+
+export USER_SERVICES="\
+	chimera.service \
+	gamemoded.service \
+	ryzen-tctl \
+	steam-patch.service \
+"
+
+export FILES_TO_DELETE="\
+	/boot/initramfs-linux-fallback.img \
+	/boot/syslinux \
+	/usr/share/SFML \
+	/usr/share/doc \
+	/usr/share/gtk-doc \
+	/usr/share/help \
+	/usr/share/libretro/autoconfig/udev/Gasia_PS_Gamepad_USB.cfg \
+	/usr/share/libretro/autoconfig/udev/Sony-PlayStation3-DualShock3-Controller-Bluetooth.cfg \
+	/usr/share/libretro/autoconfig/udev/Xbox_360_Wireless_Receiver_Chinese01.cfg \
+	/usr/share/man \
+"
+
+postinstallhook() {
+	# disable retroarch menu in joypad configs
+	find /usr/share/libretro/autoconfig -type f -name '*.cfg' | xargs -d '\n' sed -i '/input_menu_toggle_btn/d'
+
+	# download and add racing wheel udev rules
+	pushd /usr/lib/udev/rules.d
+	curl -L -O https://raw.githubusercontent.com/berarma/oversteer/master/data/udev/99-fanatec-wheel-perms.rules
+	curl -L -O https://raw.githubusercontent.com/berarma/oversteer/master/data/udev/99-logitech-wheel-perms.rules
+	curl -L -O https://raw.githubusercontent.com/berarma/oversteer/master/data/udev/99-thrustmaster-wheel-perms.rules
+	popd
+
+	# avoid some broken libretro cores
+	curl -L -O https://archive.archlinux.org/repos/2022/01/09/community/os/x86_64/libretro-flycast-4475-1-x86_64.pkg.tar.zst
+
+	pacman --noconfirm -U *.pkg.tar.zst
+	rm *.pkg.tar.zst
+
+	# Remove build tools for slimmer image
+	rm /usr/share/libalpm/hooks/70-dkms-install.hook
+	rm /usr/share/libalpm/hooks/70-dkms-upgrade.hook
+	rm /usr/share/libalpm/hooks/71-dkms-remove.hook
+	pacman --noconfirm -Rnsdd make gcc dkms ${KERNEL_PACKAGE}-headers
+
+	# remove dolphin standalone emulator files (only need /usr/share/dolphin-emu/sys)
+	rm /usr/bin/dolphin-emu
+	rm /usr/bin/dolphin-emu-nogui
+	rm /usr/bin/dolphin-tool
+	rm /usr/share/applications/dolphin-emu.desktop
+
+	# force -steamdeck option in desktop mode to prevent constant steam updates
+	sed -i 's,Exec=/usr/bin/steam-runtime,Exec=/usr/bin/steam-runtime -steamdeck,' /usr/share/applications/steam.desktop
+}

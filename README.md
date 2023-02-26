@@ -1,2 +1,5 @@
-# streambox
-A Steam Big Picture based streambox for home use
+A streambox image based on ChimeraOS
+
+DO NOT DOWNLOAD DIRECTLY FROM THE RELEASES PAGE. THIS IS NOT INSTALLATION MEDIA. FOLLOW THE LINK BELOW FOR DOWNLOAD AND INSTALLATION INSTRUCTIONS.
+
+[ChimeraOS website](https://chimeraos.org)
