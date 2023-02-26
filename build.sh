@@ -124,7 +124,7 @@ pacman-key --lsign-key cc7a2968b28a04b3
 
 echo '
 [rumpowered]
-Server = https://jc141x.github.io/rumpowered-packages/$arch
+Server = https://repo.rumpowered.org/$arch
 ' >> /etc/pacman.conf
 
 # update package databases
