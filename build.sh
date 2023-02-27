@@ -136,6 +136,9 @@ rm -rf /var/cache/pacman/pkg
 pacman --noconfirm -U --overwrite '*' /extra_pkgs/*
 rm -rf /var/cache/pacman/pkg
 
+# install pip packages
+pip install -y ${PYTHON_PIP}
+
 # enable services
 systemctl enable ${SERVICES}
 

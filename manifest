@@ -48,7 +48,6 @@ export PACKAGES="\
     gstreamer-vaapi \
 	gvfs \
 	haveged \
-    openbox \
 	htop \
 	iio-sensor-proxy \
 	intel-media-driver \
@@ -112,6 +111,7 @@ export PACKAGES="\
 	python \
 	python-gobject \
 	python-inotify-simple \
+    python-pip \
 	retroarch \
 	rsync \
 	smbclient \
@@ -125,7 +125,6 @@ export PACKAGES="\
 	vulkan-icd-loader \
 	wavpack \
 	which \
-	wine-staging \
 	wine-mono \
 	wireplumber \
 	wqy-zenhei \
@@ -165,10 +164,15 @@ export AUR_PACKAGES="\
 	steam-removable-media-git \
 	steamos-compositor-plus \
 	sunshine \
+	waybox \
 	wyvern \
 	xone-dkms \
 	xpad-noone-dkms \
 	xpadneo-dkms \
+"
+
+export PYTHON_PIP="\
+    steamctl \
 "
 
 export SERVICES="\
@@ -222,6 +226,9 @@ postinstallhook() {
 	curl -L -O https://archive.archlinux.org/repos/2022/01/09/community/os/x86_64/libretro-flycast-4475-1-x86_64.pkg.tar.zst
     curl -L -O https://github.com/jc141x/rumpowered-packages/raw/master/x86_64/bindtointerface-4b03914-2-x86_64.pkg.tar.zst
 	curl -L -O https://github.com/jc141x/rumpowered-packages/raw/master/x86_64/lib32-bindtointerface-4b03914-2-x86_64.pkg.tar.zst
+	curl -L -O https://github.com/varmd/wine-wayland/releases/download/v8.2.1/lib32-wine-wayland-8.2-1-x86_64.pkg.tar.zst
+	curl -L -O https://github.com/varmd/wine-wayland/releases/download/v8.2.1/wine-wayland-8.2-1-x86_64.pkg.tar.zst
+
 
 	pacman --noconfirm -U *.pkg.tar.zst
 	rm *.pkg.tar.zst
