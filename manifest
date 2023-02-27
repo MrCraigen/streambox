@@ -125,7 +125,6 @@ export PACKAGES="\
 	vulkan-icd-loader \
 	wavpack \
 	which \
-	wine-mono \
 	wireplumber \
 	wqy-zenhei \
 	xdg-desktop-portal \
@@ -228,6 +227,8 @@ postinstallhook() {
 	curl -L -O https://github.com/jc141x/rumpowered-packages/raw/master/x86_64/lib32-bindtointerface-4b03914-2-x86_64.pkg.tar.zst
 	curl -L -O https://github.com/varmd/wine-wayland/releases/download/v8.2.1/lib32-wine-wayland-8.2-1-x86_64.pkg.tar.zst
 	curl -L -O https://github.com/varmd/wine-wayland/releases/download/v8.2.1/wine-wayland-8.2-1-x86_64.pkg.tar.zst
+        curl -L -O https://archive.archlinux.org/repos/2022/11/01/community/os/x86_64/wine-mono-7.3.0-1-any.pkg.tar.zst
+        curl -L -O https://archive.archlinux.org/repos/2022/11/01/community/os/x86_64/wine-gecko-2.47.3-1-x86_64.pkg.tar.zst
 
 
 	pacman --noconfirm -U *.pkg.tar.zst
