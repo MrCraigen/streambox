@@ -38,20 +38,31 @@ export PACKAGES="\
 	fuse-overlayfs \
 	openssl-1.1 \
 	gamemode \
+    giflib \
+	gst-libav \
+	gst-plugins-bad \
+	gst-plugins-base \
+	gst-plugins-good \
+    gst-plugins-ugly \
 	gst-plugin-pipewire \
+    gstreamer-vaapi \
 	gvfs \
 	haveged \
+    openbox \
 	htop \
 	iio-sensor-proxy \
 	intel-media-driver \
 	intel-ucode \
 	intel-undervolt \
+    lib32-alsa-lib \
+	lib32-alsa-plugins \
 	lib32-curl \
 	lib32-fontconfig \
 	lib32-freetype2 \
 	lib32-gamemode \
 	lib32-libgpg-error \
 	lib32-libnm \
+    lib32-libpulse \
 	lib32-libxinerama \
 	lib32-libxcrypt-compat \
 	lib32-libva-vdpau-driver \
@@ -61,6 +72,7 @@ export PACKAGES="\
 	lib32-vulkan-icd-loader \
 	libcurl-gnutls \
 	libidn11 \
+    libgphoto2 \
 	libretro-beetle-pce-fast \
 	libretro-beetle-psx-hw \
 	libretro-desmume \
@@ -89,9 +101,6 @@ export PACKAGES="\
 	networkmanager \
 	nfs-utils \
 	nss-mdns \
-	nvidia-dkms \
-	nvidia-prime \
-	nvidia-utils \
 	openal \
 	openssh \
 	pipewire \
@@ -121,16 +130,23 @@ export PACKAGES="\
 	wireplumber \
 	wqy-zenhei \
 	xdg-desktop-portal \
-	xdg-desktop-portal-gnome \
 	xdg-desktop-portal-wlr \
-	xdg-user-dirs-gtk \
 	xf86-video-amdgpu \
 	xorg-server \
+    zlib \
+	chaotic-aur/dwarfs \
+	chaotic-aur/legendary \
+	chaotic-aur/boxtron \
+	chaotic-aur/python-vdf \
+	chaotic-aur/r8152-dkms \
+	chaotic-aur/rtl88x2bu-dkms-git \
+	chaotic-aur/rtw89-dkms-git \
 "
 
 export AUR_PACKAGES="\
 	alienware-alpha-wmi \
 	bcm20702a1-firmware \
+    chimera \
 	chimeraos-device-quirks-git \
 	frzr \
 	gamescope-plus \
@@ -153,13 +169,6 @@ export AUR_PACKAGES="\
 	xone-dkms \
 	xpad-noone-dkms \
 	xpadneo-dkms \
-	dwarfs \
-	legendary \
-	boxtron \
-	python-vdf \
-	r8152-dkms \
-	rtl88x2bu-dkms-git \
-	rtw89-dkms-git \
 "
 
 export SERVICES="\
